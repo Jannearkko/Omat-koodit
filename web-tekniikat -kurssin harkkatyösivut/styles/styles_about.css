@@ -1,0 +1,112 @@
+/*styling for about page */
+*  {
+    box-sizing: border-box;
+}
+html  {
+    scroll-behavior: smooth;
+}
+body  {
+    margin: 0;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    background-position: right 25% top;
+	background-image: url("../images/surffaaja2.jpg");
+    font-size: 100%;
+}
+body::after  {/* first linear gradient background from right to left */
+    background-attachment: fixed;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 80%);
+    z-index: -1;
+}
+body::before  {/* second linear gradient background from left to right */
+    background-attachment: fixed;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, transparent 0%, rgb(0, 0, 0) 100%);
+    z-index: -1;
+}
+.page  {
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+.about  { /*headline */
+    font-family: 'Major Mono Display', monospace;
+    font-size: 6vmin;
+    color: #FF9F55;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+.content  { /* content of about page */
+    float: left;
+    width: 60%;
+    margin-top: 30px;
+    color: #ffffff;
+    background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 100%);
+}
+.content_motto  { /* red motto next to text */
+    position: relative;
+    top: 50px;
+    right: 30px;
+    float: right;
+    padding-left: 50px;
+    color: rgb(248, 74, 74, 1);
+    font-size: 2vmin;
+    transform: rotate(15deg);
+}
+.content_motto .slogan_one  { /* quotation mark */
+    font-size: 10vmin;
+    margin-bottom: -30px;
+}
+.content_motto .slogan_two  { /* quotation mark */
+    font-size: 10vmin;
+    text-align: right;
+    margin-bottom: -30px;
+}
+.content p  { /* p inside about */
+    font-family: 'Kanit', sans-serif;
+    font-size: 3vmin;
+}
+ /* mobile devices and smaller screens */
+@media (max-width: 1400px)  {
+    .content  {
+        width: 70%;
+    }
+    .content_motto  { /* for technical difficulties hide motto when at mobile screen */
+        display: none;
+    }
+    .content_motto .slogan_two  {
+        font-size: 500%;
+        text-align: left;
+        padding-left: 300px;
+    }
+}
+/*adjusting content width when minimizing to ensure better visibility */
+@media (max-width: 1250px)  {
+    .content  {
+        width: 80%;
+    }
+}
+@media (max-width: 1100px)  {
+    .content  {
+        width: 90%;
+    }
+}
+@media (max-width: 991px)  {
+    .content  {
+        width: 100%;
+    }
+}
+
+

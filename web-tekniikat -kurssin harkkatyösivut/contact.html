@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Janne Arkko official webpage and portfolio. A firefighter learning to code.">
+  <meta name="author" content="Janne Arkko">
+  <meta name="keywords" content="Janne Arkko">
+
+<!-- css stylesheets -->
+<link rel="stylesheet" href="styles/styles_overlay.css"><!-- css for overlay menu-->
+<link rel="stylesheet" href="styles/styles_contact.css"><!-- css to the actual page -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="fonts/webfontkit-20210510-132214/stylesheet.css">
+<!-- icons and fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<!--lightbox-->
+<link href="lightbox/src/css/lightbox.css" rel="stylesheet">
+
+<title>Janne Arkko/Contact</title>
+
+</head>
+
+<body>
+<!-- overlay menu-->
+<main>
+    <nav class="fullpageMenu" id="nav">
+        <div class="banner">
+            <img src="images/janne1.jpg" alt="Janne Arkko">
+        </div>
+        <!-- overlayn links -->
+        <div class="nav">
+            <ul>
+                <li><a href="about.html" data-text="About">About</a></li>
+                <li><a href="portfolio.html" data-text="Portfolio">Portfolio</a></li>
+                <li><a href="contact.html" data-text="Contact"><span class="currentLink">Contact</span></a></li>
+                <li><a href="index.html" data-text="Return to Frontpage" style="font-size: 150%;">Return to Frontpage</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- hamburger menu icon and span to toggle overlay menu-->
+    <span class="menuiconcontact" id="toggle" onclick="menuToggle()"><i class="fa fa-bars fa-2x" style="color: rgb(248, 74, 74);"></i></span>
+    <!-- JS for overlay menu -->
+        <script>
+            function menuToggle()  {
+                var nav = document.getElementById('nav');
+                var toggle = document.getElementById('toggle');
+                nav.classList.toggle("active")
+                toggle.classList.toggle("active")
+            }
+        </script>
+    <!-- page starts -->
+    <section class="page">
+        <header>
+            <h1 class="contact_header">Contact</h1>
+        </header>
+        <!-- content starts -->
+        <article class="content">
+            <h2 style="display:none">Contact Links</h2>
+            <!-- links to open the modal -->
+            <a id="social" class="socialmedia">SOCIAL MEDIA</a><span style="color: rgb(248, 74, 74); font-size: 2em; padding: 0 15px 0 20px;">|</span>
+            <a id="contact" class="contactme">CONTACT ME</a>
+            <!--social media modal-->
+                <div id="my_social" class="modalsocial">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close"><i class="fa fa-times"></i></span> <!-- close button for first modal -->
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><a href="https://www.facebook.com/Pursari" class="fa fa-facebook" target="_blank"></a></li>
+                                <li><a href="https://www.instagram.com/janne.arkko/" class="fa fa-instagram" target="_blank"></a></li>
+                                <li><a href="https://www.linkedin.com/in/janne-arkko-a67062210/" class="fa fa-linkedin" target="_blank"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- JS for social media modal -->
+                    <script>
+                        var modalsocial = document.getElementById('my_social');
+                        var btn = document.getElementById("social");
+                        var span = document.getElementsByClassName("close")[0];
+            
+                        btn.onclick = function() {
+                            modalsocial.style.display = "block";
+                        }
+            
+                        span.onclick = function() {
+                            modalsocial.style.display = "none";
+                        }
+                    </script>   
+                </div>
+                <!-- social media modal ends -->
+                <!--contact modal-->
+                <div id="my_contact" class="modalcontact">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close_one"><i class="fa fa-times"></i></span> <!-- close button for second modal -->
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><a href="mailto:janne.arkko@outlook.com" class="fa fa-envelope" target="_blank"></a></li>
+                                <li><a href="tel:+348405655290" class="fa fa-mobile" target="_blank"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- JS for second modal -->
+                    <script>
+                        var modalcontact = document.getElementById('my_contact');
+                        var btn = document.getElementById("contact");
+                        var span = document.getElementsByClassName("close_one")[0];
+                    
+                        btn.onclick = function() {
+                            modalcontact.style.display = "block";
+                        }
+                        span.onclick = function() {
+                            modalcontact.style.display = "none";
+                        }
+                    </script>     
+                </div>
+                <!--contact modal ends-->
+        </article>
+        <footer class="footer">© Janne Arkko 2021. Course of Selection.<br> All rights reserved.</footer>
+        <!--content ends-->
+    </section>
+</main>
+<!--page ends-->
+</body>
+</html>
+  
+

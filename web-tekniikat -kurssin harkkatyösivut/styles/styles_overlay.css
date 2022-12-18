@@ -1,0 +1,189 @@
+/* styling for overlay menu */
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', sans-serif;
+}
+body  {
+    min-height: 100vh; /* min height to ensure visibility of overlay menu in all scenarios */
+}
+.fullpageMenu  { /* full screen menu */
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 999;
+}
+.fullpageMenu.active  { /* when menu active adjust position */
+    top: 0;
+}
+.fullpageMenu  .banner  { /* area for banner image */
+    position: relative;
+    min-width: 600px;
+    height: 100%;
+}
+.fullpageMenu  .banner img  { /* image on banner */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 600px;
+    box-shadow: 7px 0 5px -5px #FF9F55;
+}
+.fullpageMenu .nav  { /* content area for navigational links */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.fullpageMenu .nav ul { /* list inside nav area */
+    position: relative;
+}
+.fullpageMenu .nav ul li  { /* links inside nav area */
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+    margin: 5px 0;
+    overflow: hidden;
+    display: table;
+}
+.fullpageMenu .nav ul li:before  { /* pseudo element for changing <li> background color when hovering */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(248, 74, 74);
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    border-radius: 15px;
+}
+.fullpageMenu .nav ul li:hover:before  {
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+.fullpageMenu .nav ul li a  { /* styling for individual links inside nav content area */
+    position: relative;
+    color: #FF9F55;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+    padding-top: 12px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+.fullpageMenu .nav ul li a:before  { /* when hovering over a link, add a new color to the text inside <li> */
+    content: attr(data-text);
+    position: absolute;
+    bottom: -90%;
+    left: 0;
+    color: rgb(255, 255, 255);
+}
+.fullpageMenu .nav ul li:hover a  { /* transform when hovering over nav content links */
+    transform: translateY(-100%);
+    color: #FF9F55;
+}
+.currentLink  {
+    text-decoration: line-through; /* line through for current active page */
+}
+.menuicon  { /* hamburger link on right top of screen */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+}
+.menuicon:hover  { /* effect when hovering hamburger link */
+    transform: translateX(-10%);
+    font-size: 110%;
+}
+.menuicon.active  {
+    cursor: pointer;    
+}
+.menuiconport  { /* different positioning for portfolio hamburger link */
+    position: fixed;
+    top: 20px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+}
+.menuiconport:hover  {
+    transform: translateX(-10%);
+    font-size: 110%;
+}
+.menuiconport.active  {
+    cursor: pointer;    
+}
+.menuiconcontact  { /* different positioning for contact hamburger link */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+}
+.menuiconcontact:hover  {
+    transform: translateX(-10%);
+    font-size: 110%;
+}
+.menuiconcontact.active  {
+    cursor: pointer;    
+}
+/* responsiveness for smaller screens and mobile devices */
+@media (max-width: 991px)  { /* hide banner img on smaller screen */
+    .banner  {
+        display: none;
+    }
+}
+@media (max-width: 900px)  {
+    .menuicon  { /* position hamburger link differently in entire page */
+        right: 0;
+        width: 40px;
+        height: 40px;
+    }
+    .menuiconport  { /* same for portfolio hamburger menu to avoid overlapping of content when scrolling */
+        position: fixed;
+        top: 20px;
+        right: -20px;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        z-index: 2;
+    }
+    .menuiconport:hover  {
+        transform: translateX(0%);
+        font-size: 110%;
+    }
+    .menuiconport.active  {
+        cursor: pointer;    
+    }
+    .menuiconcontact  {
+        right: 10px;
+    }
+}
+

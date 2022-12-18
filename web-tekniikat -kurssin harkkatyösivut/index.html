@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Janne Arkko official webpage and portfolio. A firefighter learning to code.">
+  <meta name="author" content="Janne Arkko">
+  <meta name="keywords" content="janne arkko, firefighter, finland">
+<!-- css stylesheets -->
+<link rel="stylesheet" href="styles/styles_overlay.css"> <!-- css for overlay menu-->
+<link rel="stylesheet" href="styles/styles_index.css"> <!-- css to the actual page -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="fonts/webfontkit-20210510-132214/stylesheet.css">
+<!--fonts and icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<!-- lightbox -->
+<link href="lightbox/src/css/lightbox.css" rel="stylesheet">
+
+<title>Janne Arkko/Official Webpage</title>
+
+</head>
+
+<body>
+<main>
+<!-- overlay menu-->
+    <nav class="fullpageMenu" id="nav">
+        <div class="banner">
+            <img src="images/janne1.jpg" alt="Janne Arkko">
+        </div>
+        <!-- overlayn links -->
+        <div class="nav">
+            <ul>
+                <li><a href="about.html" data-text="About">About</a></li>
+                <li><a href="portfolio.html" data-text="Portfolio">Portfolio</a></li>
+                <li><a href="contact.html" data-text="Contact">Contact</a></li>
+                <li><a href="index.html" data-text="Return to Frontpage" style="font-size: 150%;"><span class="currentLink">Return to Frontpage</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- hamburger menu icon and span to toggle overlay menu-->
+    <span class="menuicon" id="toggle" onclick="menuToggle()"><i class="fa fa-bars fa-2x" style="color:rgb(248, 74, 74)"></i></span>
+    <!-- JS for overlay menu -->
+        <script>
+            function menuToggle()  {
+                var nav = document.getElementById('nav');
+                var toggle = document.getElementById('toggle');
+                nav.classList.toggle("active")
+                toggle.classList.toggle("active")
+            }
+        </script>
+    <section class="page"> <!-- page begins -->
+        <h1 style="display: none">Index</h1>
+        <article class="content_index"> <!-- content of index page/frontpage-->
+            <h2 style="display: none">Author</h2>
+            <div class="janne"> <!-- content area for animated name and welcome behind it-->
+                <ul>
+                    <li>J</li>
+                    <li>A</li>
+                    <li>N</li>
+                    <li>N</li>
+                    <li>E</li>
+                    <li>A</li>
+                    <li>R</li>
+                    <li>K</li>
+                    <li>K</li>
+                    <li>O</li>
+                </ul>
+            </div>
+            <div class="title"> <!-- content area for animated title and to my site behind it-->
+                <ul>
+                    <li>F</li>
+                    <li>I</li>
+                    <li>R</li>
+                    <li>E</li>
+                    <li>F</li>
+                    <li>I</li>
+                    <li>G</li>
+                    <li>H</li>
+                    <li>T</li>
+                    <li>E</li>
+                    <li>R</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+        <!-- content of index page ends -->
+</main>
+<!-- page ends -->
+</body>
+</html>

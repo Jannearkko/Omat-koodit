@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Janne Arkko official webpage and portfolio. A firefighter learning to code.">
+  <meta name="author" content="Janne Arkko">
+  <meta name="keywords" content="Janne Arkko">
+
+<!-- css stylesheets-->
+<link rel="stylesheet" href="styles/styles_overlay.css"><!-- css for overlay menu-->
+<link rel="stylesheet" href="styles/styles_about.css"><!-- css to the actual page -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="fonts/webfontkit-20210510-132214/stylesheet.css">
+<!-- fonts and icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<!-- lightbox -->
+<link href="lightbox/src/css/lightbox.css" rel="stylesheet">
+
+<title>Janne Arkko/About</title>
+
+</head>
+
+<body>
+<!-- overlay menu-->
+<main>
+    <nav class="fullpageMenu" id="nav">
+        <div class="banner">
+            <img src="images/janne1.jpg" alt="Janne Arkko">
+        </div>
+    <!-- overlayn links -->
+        <div class="nav">
+            <ul>
+                <li><a href="about.html" data-text="About"><span class="currentLink">About</span></a></li>
+                <li><a href="portfolio.html" data-text="Portfolio">Portfolio</a></li>
+                <li><a href="contact.html" data-text="Contact">Contact</a></li>
+                <li><a href="index.html" data-text="Return to Frontpage" style="font-size: 150%;">Return to Frontpage</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- hamburger menu icon and span to toggle overlay menu-->
+    <span class="menuicon" id="toggle" onclick="menuToggle()"><i class="fa fa-bars fa-2x" style="color: rgb(248, 74, 74);"></i></span>
+    <!-- JS for overlay menu -->
+        <script>
+            function menuToggle()  {
+                var nav = document.getElementById('nav');
+                var toggle = document.getElementById('toggle');
+                nav.classList.toggle("active")
+                toggle.classList.toggle("active")
+            }
+        </script>
+    <section class="page"> <!-- page begins -->
+        <header>
+            <h1 class="about">About Me</h1><!--headline-->
+        </header>
+
+            <article class="content"><!-- content of about begins -->
+                <h2 style="display: none">About Me</h2>
+			    <p style="padding-top: 20px;">Hey there! I am Janne Arkko, a professional firefighter, a husband and a father of two beautiful kids, Oliver and Kerttu.
+                    If i'm not extinguishing fires and saving people or boxing you can find me playing with my kids in the backyard.
+                </p>
+                <br>
+                <p>I'm currently participating in a course of selection to become a ICT Engineer. I am thrilled for this opportunity
+                    and trying my very best to be elected. Our goal is to create our own website.
+                </p>
+                <br>
+                <p>Learning new things and exploring the world is what carries me on. Helping the citizens and getting my hands dirty doing so is what motivates me.
+                    And the silent respect towards the firefighters all over the world is what rewards me.
+                </p>
+                <br>
+                <p>ICT is needed in every, even the smallest of, gadgets and components. It really is the business of the future, hence why i am very motivated
+                    in learning the field and doing my best in the course of selection.
+                </p>
+            </article>
+            <aside class="content_motto"> <!-- motto and quotations-->
+                <h2 class="slogan_one">"</h2>
+                <h2>The cat runs out of piss<br> before firefighter runs out of options</h2>
+                <h2 class="slogan_two">"</h2>
+                <h2 style="text-align: left; padding-top: 5px;">-Unknown Firefighter</h2>
+            </aside>
+            <div style="clear:both"></div>
+        <!-- clear all floats -->
+    </section>
+</main>
+<!-- page ends -->
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fi-fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Janne Arkon web-sivu ja portfolio">
+  <meta name="author" content="Janne Arkko">
+  <meta name="keywords" content="Janne Arkko">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+<link rel="stylesheet" href="styles/styles_itsearvio.css">
+
+<title>Itsearvio/Harjoitustyö</title>
+
+</head>
+
+<body>
+<!-- page alkaa -->
+<div class="page">
+<!-- header alkaa -->
+    <div class="header">
+        <b>JANNE ARKKO, HARJOITUSTYÖ</b><br>
+        Valintaopintojakso 2021
+    </div>
+<!-- navbar -->
+    <div class="nav">
+        <ul>
+            <li><a href="synopsis.html">Synopsis</a></li>
+            <li><a href="rakennekaavio.html">Rakennekaavio</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="testaus.html">Testaus</a></li>
+            <li><a href="resurssit.html">Resurssit</a></li>
+            <li class="currentLink"><a href="itsearvio.html">Itsearvio ja kommentit</a></li>
+            <li><a href="https://student.labranet.jamk.fi/~AB3817/web_tekniikat/Harjoitustyo/" target="_blank">Linkki sivustoon!</a></li>
+        </ul>
+    </div>
+<!-- content -->
+    <div class="content">
+        <h1>Itsearviointi</h1>
+            <h2>Sisällölliset (25% 0-5 pistettä kokonaisarvostelusta)</h2>
+                <ul>
+                    <li>Dokumentaatio mielestäni, kriittisesti arvioituna, kohtuullisen laaja ja selkeä.</li>
+                    <li>Synopsiksesta puuttuu joitain asioita kuten palvelimen kaistanopeudet joista ei minulla ole hajuakaan, mutta luulen, että sillä ei niinkään
+                        painoarvoa ole. Muuten synopsiksen osalta pystyin mielestäni pohtimaan hyvin kenelle oikeasti sivustoa haluan tehdä ja osaltaan se varmasti
+                        heijastaa siihen minkälaisessa työpaikassa tulevaisuudessa haluaisin tehdä työtä ja kenen kanssa.</li>
+                    <li>Layout -suunnitelma voisi olla selkeämpi, nyt se on hieman print screen ja paintilla rakennettu. Itse saan siitä selvää, mutta voisihan tuo olla parempikin.</li>
+                    <li>Loppuraportin osalta, jossa tämäkin arvio on, mielestäni onnistuin ihan hyvin. Sisällöllisiä asioita pystyin pohtimaan kohtuullisen syvällisesti.</li>
+                </ul>
+            <h2 style="text-align: center; text-decoration: underline;">Annan itselleni sisällöllisistä vaatimuksista 4/5 pistettä.</h2>
+            
+            <h2>Ulkonäkö (25% 0-5 pistettä kokonaisarvostelusta)</h2>
+                <ul>
+                    <li>Ensivaikutelma hyvä. Index -sivu selkeä, yksinkertainen, hieman hover efektillä varustettu.
+                        Purilaisvalikko yläkulmassa näkyvillä ja ainakin itselle ja kaikille käyttäjätestausta suorittaneille
+                        se on selkeästi kuvannut, että tuossa on Menu -valikko.</li>
+                    <li>Sisällöt olen pyrkinyt järjestämään niin, että ne ovat selkeitä ja asiakokonaisuuksissaan. Mielestäni 
+                        onnistuin tässä hyvin. Overlay menu ja contact-sivun modal ovat selkeitä ja helppokäyttöisiä. Ne luovat myös
+                        omanlaisen kosketuksen koko sivustolle. Fontit ja fonttikoot ovat sopusuhtaisia ja sivustolle sopivia.</li>
+                    <li>Värimaailmaa on hiottu käyttäjäkokemusten pohjalta paremmaksi ja silmäystävällisemmäksi.
+                        Mielestäni se on nyt oikein hyvä ja värit keskenään yhteensopivia.</li>
+                    <li>Käytettävyys on jatkaa samaa rataa eli purilaisvalikko on selkeä, linkit sen takana selkeitä ja helppokäyttöisiä,
+                        linkkiä kun painaa ja menee takaisin overlay menuun niin aktiivisen sivun linkin päällä on viiva, joka kertoo millä sivulla ollaan.</li>
+                    <li>Videot ja kuvat renderöi hyvin ja näyttää hyvältä. Youtube upotukset toimii.</li>
+                    <li>Scriptit toimii moitteetta.</li>
+                </ul>
+            <h2 style="text-align: center; text-decoration: underline;">Annan itselleni ulkonäöllisistä vaatimuksista 5/5 pistettä.</h2>
+
+            <h2>Tekniset (40% 0-5 pistettä kokonaisarvostelusta)</h2>
+                <ul>
+                    <li>Websivut ovat validit. Validaattorilla ei virheitä eikä varoituksia.</li>
+                    <li>Testaus eri selaimilla onnistunut. Niistä tarkemmin <a href="testaus.html">Testaus</a> -välilehdellä.</li>
+                    <li>Metatiedot oikein asetettu, tyylitiedostot, stylesheetit ja kaikki muut linkitykset esim. fonteille toimii ja oikein asetettu.</li>
+                    <li>Joka sivulle oma ulkoinen tyylitiedosto. Joitain tiedoston sisäisiä tyylin muutoksia voi olla html -koodissa, koska voi olla, että joskus se on helpompi
+                        tehdä pieni muokkaus suoraan koodiin.</li>
+                    <li>Skaalautuvuus on mielestäni hyvä. Hieman esim. about -sivulla jää sivuston alareunaan tyhjää tilaa kun käyttää suhteellisia fonttimäärityksiä
+                        (vw) jolloin kun mennään ihan pienimpään mobiilinäkymään niin fontti pienenee todella paljon, mutta tilaa jää.</li>
+                    <li>Teknisesti kahdeksan viikon kurssilla olen mielestäni oppinut HTML ja CSS -koodauksen alkeet hyvin ja se näkyy myös
+                        harjoitustyössäni kun huomioidaan etten ikinä aiemmin ole mitään koodannut.</li>
+                </ul>
+            <h2 style="text-align: center; text-decoration: underline;">Annan itselleni teknisistä vaatimuksista 4/5 pistettä.</h2>
+
+            <h2>Itsearvio sivustosta (10% 0-5 pistettä kokonaisarvostelusta)</h2>
+                <ul>
+                    <li>Sisällölliset vaatimukset 4/5 pistettä.</li>
+                    <li>Ulkonäölliset vaatimukset 5/5 pistettä.</li>
+                    <li>Tekniset vaatimukset 4/5 pistettä.</li>
+                    <li>Itsearvio 4/5 pistettä.</li>
+                </ul>
+                <h2 style="text-align: center; text-decoration: underline;">Arvosanani itselleni yllä olevan kehikon mukaisesti on:</h2>
+                <h1>17/20 pistettä eli arvosana 4+.</h1>
+
+                <h2>Kokonaisajallisesti koko harjoitustyön tekemiseen minulla kului arviolta noin ~60-70 tuntia työaikaa.</h2>
+                <h2>Koko opintojakson aikana työtuntien määrä oli kutakuinkin se opintojakson alussa mainittu noin 100-120 tuntia.</h2>
+<br>
+<br>
+                <hr>
+        <h1>Kommentit valintaopintojaksosta 2021</h1>
+            <p>Valintaopintojakso 2021 oli mielestäni äärimmäisen mielenkiintoinen ja todella motivoiva kokonaisuus pintaraapaisuna tieto- ja viestintätekniikan
+                maailmasta. Tykkäsin tästä todella paljon.</p>
+            <p>Oli todella mieluisaa huomata miten kehittyy, täysin pystymetsästä tulevana, koodauksessa ja loppua kohden jotkin asiat olivat jo niin itsestään 
+                selvyyksiä, että työstä tuli todella miellyttävää ja se vahvisti sitä, että tätä voisin kuvitella tekeväni vielä työkseni joku päivä.</p>
+            <p>Tehtävänannot olivat mielestäni selkeitä juuri tähän tarkoitukseen kun niiden ei pidäkkään olla täysin kattavia vaan siinä joutuu itse
+                tekemään try and error -tyyppisesti töitä ja etsiä sitä vastausta. F12 -näppäimestä on tullut paras kaverini!</p>
+            <p>Harjoitukset itsessään menivät hyvin taitopohjan mukaan eteenpäin ja aina tuli kohtuullinen määrä lisää tietoa ja taitoa ammennettavaksi. </p>
+            <p>Vaikka käyn normaalisti töissä päivittäin en missään vaiheessa kokenut työtaakkaa liian suureksi ja sainkin tehtyä kaikki harjoitukset reilusti etuajassa. Yritin sitten aina korjailla niitä 
+                paremmaksi ja paremmaksi ennen harjoituksen sulkeutumisaikaa. Ja hyviä arvosanojakin sain!</p>
+            <p>Kokonaisuutena valintopintojakso oli mielestäni onnistunut ja toivon todella, että näitä vaihtoehtoisia valintatapoja
+                kehitetään lisää, koska tämänlaisella opintojaksolla varmasti päästään parempaan opiskelijamateriaan kuin perinteisellä valintakokeella.</p>
+            <p>Minä, Janne Arkko, kiitän opintojaksosta suuresti! Vaikka minua ei valittaisikaan niin hukkaan tämä ei mennyt vaan aion jatkaa
+                itseni kehittämistä ja itseoppimista tulevaisuudessa!
+            </p>
+    </div>
+
+</div>
+</body>
+</html>

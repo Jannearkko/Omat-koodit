@@ -1,0 +1,379 @@
+/* styling for portfolio */
+*  {
+    box-sizing: border-box;
+}
+html  {
+    scroll-behavior: smooth;
+}
+body  {
+    margin: 0;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    background-position: right top;
+	background-image:url("../images/janne_laudalla2.jpg");
+    font-size: 100%;
+}
+body::after  {  /* shading on top of background image */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 90%);
+    z-index: -1;
+}
+body::before  {/* second shading on top of background image */
+    background-attachment: fixed;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, transparent 10%, rgb(0, 0, 0) 100%);
+    z-index: -1;
+}
+.page  {  /* style for page  */
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+.portfolio  {  /* headline  */
+    font-family: 'Major Mono Display', monospace;
+    font-size: 6vmin;
+    color: #FF9F55;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+.mywork  {  /* headline 2 */
+    font-family: 'Major Mono Display', monospace;
+    font-size: 5vmin;
+    color: #FF9F55;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.page h3  { /* headline 3 */
+    text-align: center;
+    color: rgb(248, 74, 74, 0.8);
+    font-size: 4vmin;
+    margin: 50px auto 30px auto;
+}
+
+.timeline  {  /* timeline content area */
+    position: relative;
+    margin: 20px auto 0 auto;
+    width: 100%;
+    padding: 40px 0 0 0;
+    background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 90%);
+    box-shadow: 7px 5px 5px -5px white;
+}
+.timeline:before  {  /* timeline line in the middle  */
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 93%;
+    background: #c2c2c2;
+}
+.timeline ul  {
+    margin: 0;
+    padding: 0;
+}
+.timeline ul li  {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+.timeline ul li:nth-child(odd)  {  /* odd to the left */
+    float:left;
+    text-align: right;
+    clear:both;
+}
+.timeline ul li:nth-child(even)  {  /* even to the right  */
+    float:right;
+    text-align: left;
+    clear:both;
+}
+.content_timeline  {
+    padding-bottom: 20px;
+}
+.timeline ul li:nth-child(odd):before  {  /* orange dot for odd content */
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: #FF9F55;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #FF9F55;
+}
+.timeline ul li:nth-child(even):before  {  /* orange dot for even content  */
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #FF9F55;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #FF9F55;
+}
+.timeline ul li h4  {  /* content headline  */
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: rgb(248, 74, 74, 0.8);
+}
+.timeline ul li p  {  /* content text  */
+    margin: 10px 0 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+.timeline ul li .aika h5  {  /* date */
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.timeline ul li:nth-child(odd) .aika  {  /* odd date style  */
+    position: absolute;
+    top: 12px;
+    right: -120px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #FF9F55;
+    color: black;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgb(248, 74, 74, 0.3);
+}
+.timeline ul li:nth-child(even) .aika  {  /* even date style  */
+    position: absolute;
+    top: 12px;
+    left: -120px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #FF9F55;
+    color: black;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgb(248, 74, 74, 0.3);
+}
+@media (max-width:970px)  {  /* responsiveness for smaller screens  */
+    .timeline  {  /* timeline area  */
+        width: 100%;
+        background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 100%);
+        box-shadow: 7px 5px 5px -5px rgb(248, 74, 74, 0.8);
+        border-radius: 0;
+    }
+    .timeline:before  {  /* make white line go left */
+        left: 3%;
+    }
+    .timeline ul li:nth-child(odd):before  {  /* odd orange dot to left  */
+        left: 2%;
+        margin-top: 30px;
+    }
+    .timeline ul li:nth-child(even):before  {  /* even orange dot to left  */
+        left: 2%;
+        margin-top: 30px;
+    }
+    .timeline ul li h4  {  /* text align to left for all headlines and upper space for date  */
+        text-align: left;
+        margin-top: 30px;
+    }
+    .timeline ul li:nth-child(odd) h4  { /* odd headlines align right  */
+        text-align: right;
+        margin-top: 30px;
+    }
+    .timeline ul li p  {  /* all paragraphs to align left  */
+        text-align: left;
+    }
+    .timeline ul li:nth-child(odd) p  {  /* all odd paragraps to align right */
+        text-align: right;
+    }
+    .timeline ul li:nth-child(even)  {
+        float: left;
+        text-align: left;
+    }
+    .timeline ul li:nth-child(odd) .aika  { /* odd dates to align with pairless headlines and paragraphs */
+        right: 40px;
+
+    }
+    .timeline ul li:nth-child(even) .aika  {  /* even date to align with other even content */
+        left: 40px;
+    }
+    .timeline ul li  {
+        width: 90%;
+    }
+    .galleria  {
+        padding: 0;
+    }
+}
+/* gallery part begings */
+.galleria  {
+	width: 100%;
+	height: auto;
+	font-size: 20px;
+	letter-spacing: 5px;
+	font-family: 'lucida console', 'monaco', monospace;
+	color: #dbd8d0;
+    background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 90%);
+    box-shadow: 7px 5px 5px -5px white;
+}
+/* slideshow */
+.slideshow-lohko {
+    margin-top: 30px;
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+.kuvat {
+	display: none;
+}
+iframe  {
+	box-shadow: 1px 1px 5px #FF9F55;
+	max-width: 100%;
+}
+img {
+	width: 460px;
+	height: 360px;
+  	max-width: 100%;
+  	height: auto;
+	box-shadow: 1px 1px 5px #FF9F55;
+}
+/*  prev.next. arrows */
+.edellinen, .seuraava {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: #FF9F55;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+.edellinen  {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+}
+.seuraava {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.edellinen:hover, .seuraava:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+/* Internal text of videos */
+.text {
+	color: white;
+	font-size: 1.4vw;
+	padding: 0.5em 0.75em;
+	position: absolute;
+	top: 8px;
+	width: 100%;
+	text-align: center;
+	z-index: 0;
+	background-color:rgba(0, 0, 0, 0.6);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+/* dots that tell which image */
+.piste {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.aktiivinen, .piste:hover { /* change color when active or at hover */
+	background-color: #FF9F55;
+}
+/* fade in when changing image */
+.haivytys {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+/* smaller screens and mobile device */
+@media only screen and (max-width: 300px) {
+.edellinen, .seuraava,.text {
+	font-size: 11px
+	}
+}
+@media only screen and (max-width: 600px) {
+iframe  {
+	height: 300px;
+	}
+}
+/* lightbox in gallery */
+.gallerytab  {
+    box-shadow: 7px 5px 5px -5px white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 90%);
+}
+.pylvas { /* columns for pictures outside lightbox */
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+.pylvas img { /* small images inside columns */
+	opacity: 0.8;
+	cursor: pointer;
+}
+.pylvas p  { /* text inside columns */
+	font-size: 1.2vw;
+    color: #ffffff;
+}
+.pylvas img:hover { /* when hovering over image, chance opacity to 1 */
+	opacity: 1;
+}
+.rivi:after { /* pseudoelement for clearing floats after row for images */
+	content: "";
+	display: table;
+	clear: both;
+}
+.content {
+	position: relative;
+	display: none;
+}
+#imgtext { /* styling for image text inside lightbox */
+	position: absolute;
+	bottom: 92%;
+	left: 25%;
+	max-width: 50%;
+	color: white;
+	font-size: 1.30vw;
+	background-color: white;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.closebtn { /*styling for close button inside lightbox */
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 3;
+}

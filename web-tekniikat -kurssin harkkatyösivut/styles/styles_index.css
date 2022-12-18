@@ -1,0 +1,170 @@
+/* styling for frontpage */
+*  {
+    box-sizing: border-box;
+}
+html  {
+    scroll-behavior: smooth;
+}
+body  {
+    margin: 0;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    background-position: top;
+	background-image: url("../images/helmet1.jpg");
+}
+body::after  {  /* first linear gradient background from right to left */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, transparent 0%, rgb(0, 0, 0) 100%);
+    z-index: -1;
+}
+body::before  {  /* second linear gradient background from left to right */
+    background-attachment: fixed;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 100%);
+    z-index: -1;
+}
+.page  {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+}
+.content_index  { /* content area of frontpage */
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+}
+.janne { /* content area for name of author */
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+}
+.title  { /* display none for transform of name into a title */
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+}
+.janne ul  { /*list for name to make it responsive when hovering */
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 1;
+    overflow:hidden;
+}
+.janne ul li  { /* list of letters to form name */
+    font-size: 8vw;
+    list-style: none;
+    color: #FF9F55;
+    font-family: 'Major Mono Display', monospace;
+    transition: 2s;
+    display: inline-block;
+    overflow:hidden;
+}
+.title ul  { /*list for name to make it responsive when hovering */
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    height: fit-content;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 0;
+}
+.title ul li  { /* list of letters to form title */
+    font-size: 7vw;
+    list-style: none;
+    color: rgb(248, 74, 74);
+    font-family: 'Major Mono Display', monospace;
+    transition: 2s;
+    display: inline-block;
+}
+.janne ul:hover:after  { /* pseudo element to show welcome text when hovering over name */
+    content:'WELCOME';
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 0;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 8vw;
+    color: #FF9F55;
+}
+.content_index:hover ul li {
+    transform: rotateY(360deg);
+    opacity: 0; /* make letters fade away when hovering */
+}
+.content_index:hover:after  { /* another pseudo element to show text on hover */
+    content: 'TO MY SITE';
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    font-size: 6vw;
+    color: rgb(248, 74, 74);
+    transform: translateY(-50%) translateX(-50%);
+    font-family: 'Major Mono Display', monospace;
+}
+@media (max-width: 1300px) {
+    .janne ul:hover:after  {
+        top: 16.5%;
+    }
+    .janne ul  {
+        top: 45%;
+    }
+}
+@media (max-width: 1100px) {
+    .janne ul:hover:after  {
+        top: 16.5%;
+    }
+    .janne ul  {
+        top: 48%;
+    }
+}
+@media (max-width: 900px) {
+    .janne ul:hover:after  {
+        top: 13%;
+    }
+    .janne ul  {
+        top: 50%;
+    }
+}
+@media (max-width: 700px) {
+    .janne ul:hover:after  {
+        top: 8%;
+    }
+    .janne ul  {
+        top: 55%;
+    }
+}
+@media (max-width: 500px) {
+    .janne ul:hover:after  {
+        top: 6.5%;
+    }
+    .janne ul  {
+        top: 57%;
+    }
+}
+
+
+
+

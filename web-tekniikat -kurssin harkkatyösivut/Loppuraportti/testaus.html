@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fi-fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Janne Arkon web-sivu ja portfolio">
+  <meta name="author" content="Janne Arkko">
+  <meta name="keywords" content="Janne Arkko">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+<link rel="stylesheet" href="styles/styles_testaus.css">
+
+<title>Testaus/Harjoitustyö</title>
+
+</head>
+
+<body>
+<!-- page alkaa -->
+<div class="page">
+<!-- header alkaa -->
+    <div class="header">
+        <b>JANNE ARKKO, HARJOITUSTYÖ</b><br>
+        Valintaopintojakso 2021
+    </div>
+<!-- navbar -->
+    <div class="nav">
+        <ul>
+            <li><a href="synopsis.html">Synopsis</a></li>
+            <li><a href="rakennekaavio.html">Rakennekaavio</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li class="currentLink"><a href="testaus.html">Testaus</a></li>
+            <li><a href="resurssit.html">Resurssit</a></li>
+            <li><a href="itsearvio.html">Itsearvio ja kommentit</a></li>
+            <li><a href="https://student.labranet.jamk.fi/~AB3817/web_tekniikat/Harjoitustyo/" target="_blank">Linkki sivustoon!</a></li>
+        </ul>
+    </div>
+<!-- content -->
+    <div class="content">
+        <h1>Testaustulokset selaimilla</h1>
+
+        <div class="content_left">
+            <h2><i class="fa fa-firefox"></i> Firefox (versio 88.0.1)</h2>
+                <ul>
+                    <li>Sivusto kehitetty Firefoxilla.</li>
+                    <li>Firefox -selaimella sivusto näyttää juuri siltä kuin pitääkin.</li>
+                    <li>Asettelu on juuri sitä mitä haettu kehittäessä.</li>
+                    <li>Jokainen sivuston osa skaalautuu hyvin pienennettäessä ruutua aina mobiilinäkymään asti.</li>
+                    <li>Kuvat ja videot renderöi hyvin ilman ongelmia.</li>
+                    <li>Fontit, iconit, scriptit kaikki toimii kuten pitääkin.</li>
+                    <li>Linkit toimii kuten pitääkin.</li>
+                </ul>
+        </div>
+        <div class="content_center">
+             <h2 style="font-size: 148%;"><i class="fa fa-chrome"></i> Chrome (versio 90.0.4430.212)</h2>
+                <ul>
+                    <li>Sivustoa tarkasteltu jatkuvasti myös Chrome -selaimella vaikka kehitetty firefoxilla.</li>
+                    <li>Etusivun header eli nimi ei ole aivan samalla paikalla kuin Firefoxilla. Syy ilmeisemmin johtuu Firefoxin eriävästä oletus zoomausprosentista.
+                        Ero ei ole järin suuri, mutta on kuitenkin.</li>
+                    <li>Skaalautuvuus hyvä aina mobiilinäkymään asti.</li>
+                    <li>Kuvat ja videot renderöi moitteetta.</li>
+                    <li>Fontit, iconit, scriptit kaikki toimii kuten pitääkin.</li>
+                    <li>Linkit toimii kuten pitääkin.</li>
+                </ul>
+        </div>
+        <div class="content_right">
+            <h2><i class="fa fa-edge"></i> Edge (versio 90.0.818.66)</h2>
+               <ul>
+                   <li>Etusivun header eli nimi ei ole aivan samalla paikalla kuin Firefoxilla. Syy ilmeisemmin johtuu Firefoxin eriävästä oletus zoomausprosentista.
+                       Ero ei ole järin suuri, mutta on kuitenkin.</li>
+                   <li>Skaalautuvuus hyvä aina mobiilinäkymään asti.</li>
+                   <li>Kuvat ja videot renderöi moitteetta.</li>
+                   <li>Fontit, iconit, scriptit kaikki toimii kuten pitääkin.</li>
+                   <li>Linkit toimii kuten pitääkin.</li>
+               </ul>
+       </div>
+    </div>
+    <div class="content">
+        <div class="content_left">
+            <h2><i class="fa fa-opera"></i> Opera (versio 76.0.4017.123)</h2>
+                <ul>
+                    <li>Etusivun header ei Operallakaan ole samassa paikassa kuin Firefoxilla, kuten muillakin selaimilla.</li>
+                    <li>Skaalautuvuus hyvä aina mobiilinäkymään asti.</li>
+                    <li>Kuvat ja videot renderöi moitteetta.</li>
+                    <li>Fontit, iconit, scriptit kaikki toimii kuten pitääkin.</li>
+                    <li>Linkit toimii kuten pitääkin.</li>
+                </ul>
+        </div>
+        <div class="content_center">
+            <h2><i class="fa fa-mobile"></i> Mobiililaitteet (puhelin ja tablet Chrome-selaimella)</h2>
+                <ul>
+                    <li>Vaikka sivustoa ei ole "Optimoitu" mobiililaitteille niin silti perinteisillä skaalautuvilla menetelmillä sivusto on oikein miellyttävä
+                        käyttää mobiililaitteilla.</li>
+                    <li>Sivustolla on :hover efektejä, mutta mobiililaitteet viisaita siinä ja jos hover -elementtiä klikkaa niin se on yhtä kuin 
+                        mousehover. Eli myös hoverilla näkyvät elementit toimivat ihan ok.</li>
+                    <li>Tabletilla sivusto on yllättävänkin miellyttävä käyttää ja kaikki toimii kuten pitääkin.</li>
+                    <li>Puhelimella varsinkin tekstit voisi olla paremmin optimoituja, mutta jälleen kun sivustoa ei varsinaisesti ole suunniteltu mobiilinäkymälle
+                        niin mielestäni sivusto ihan miellyttävä myös puhelimen näytölle.</li>
+                </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="content_validator">
+        <h1>W3S validaattorin tulokset</h1>
+        
+        <h1>Validaattorin antamat virheet kehityksen aikana</h1>
+        <ul style="text-align: left;">
+            <li>Kehitystyön aikana tuli useasti virheitä ja varoituksia, mutta niistä oppineena ja ne korjanneena loppua kohden
+                virheitä ei ole ollut säännöllisillä tarkastuksilla. Yleisesti ottaen virheet mitä on ollut ovat olleet ihan pieniä 
+                mm. ul -tagin sisällä ei voi käyttää muita tageja kuin li yms. ja 90% niistä ollut opintojakson alussa kun
+                alkoi harjoitustyön ensimmäistä vedosta rakentamaan. Virheitä joista on ollut helppo oppia ja kun sivuja on kehitysvaiheessa
+                ajanut jokaisen suuremman etapin jälkeen validaattorin läpi niin virheiden määrä on aina ollut hyvin pieni ja helposti lähestyttävä ja korjattava.
+            </li>
+            <li style="margin-top: 5px;">Myöskin jatkuva tiedonhaku internetistä miten minkälaisiakin elementtejä ja asioita websivuille saa rakennettua on valjastanut tähän 
+                hyvään validiin lähestymistapaan rakentaa koodia ja työskennellä.
+            </li>
+        </ul>
+            <h2>Frontpage/index</h2>
+                <ul>
+                    <li>Index -sivulle validaattori ei anna virheitä eikä varoituksia.</li>
+                    <li>Overlay -menu on osa kaikkia sivuja, joten siitäkään ei varoituksia erikseen tule.</li>
+                    <li>CSS -tyylitiedostot virheettömiä myös. Niistä ei kuitenkaan nyt kuvia.</li>
+                </ul>
+                <img src="validator/frontpage.jpg" alt="Frontpage">
+            <h2>About</h2>
+                <ul>
+                    <li>About -sivulle validaattori ei anna virheitä eikä varoituksia.</li>
+                    <li>CSS -tyylitiedostot virheettömiä myös. Niistä ei kuitenkaan nyt kuvia.</li>
+                </ul>
+                <img src="validator/about.jpg" alt="About">
+            <h2>Portfolio</h2>
+                <ul>
+                    <li>Myöskään portfolio -sivulle validaattori ei anna virheitä eikä varoituksia.</li>
+                    <li>CSS -tyylitiedostot virheettömiä myös. Niistä ei kuitenkaan nyt kuvia.</li>
+                </ul>
+                <img src="validator/portfolio.jpg" alt="Portfolio">
+            <h2>Contact</h2>
+                <ul>
+                    <li>Myöskään contact -sivulle validaattori ei anna virheitä eikä varoituksia.</li>
+                    <li>CSS -tyylitiedostot virheettömiä myös. Niistä ei kuitenkaan nyt kuvia.</li>
+                </ul>
+                <img src="validator/contact.jpg" alt="Contact">
+        <hr>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+</body>
+</html>

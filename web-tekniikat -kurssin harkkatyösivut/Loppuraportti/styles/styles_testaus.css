@@ -1,0 +1,127 @@
+*  {
+    box-sizing: border-box;
+}
+/* koko sivuston muotoilu */
+body  {
+    margin: 0;
+	font-family: georgia, garamond, serif;
+    font-size: 100%;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.page  {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height:fit-content;
+}
+/* header/otsikko */
+.header  {
+    height: 1em;
+    padding-bottom: 2.5em;
+    padding-top: 1em;
+    background-color: transparent;
+    color: #201f1fce;
+    margin: auto;
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: 0.3125em;
+    border-bottom: 3px solid black;
+}
+/* navbar */
+.nav ul  {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 3px solid black;
+}
+.nav li  {
+    display: inline-block;
+    padding: 1em;
+}
+.nav a  {
+    text-decoration: none;
+    color: #201f1fce;
+    display: block;
+    font-family: righteous;
+}
+.nav a:hover  {
+    font-weight: bold;
+}
+.currentLink  {
+    text-decoration: underline;
+}
+/* Synopsis-sivun muotoilu */
+/* .content yhteinen */
+
+.content  {
+    text-align: center;
+    font-family: 'righteous';
+    width: 100%;
+    font-size: 100%;
+    overflow: hidden;
+}
+.content p  {
+    padding: 0;
+    text-align: left;
+}
+.content h2  {
+    text-align: left;
+}
+.content_left  {
+    width: 33%;
+    float: left;
+    padding: 10px;
+}
+.content_left ul  {
+    text-align: left;
+    margin: auto;
+}
+.content_left ul li  {
+    font-size: 120%;
+    list-style-type: square;
+}
+.content_center  {
+    width: 33%;
+    float: left;
+    padding: 10px;
+}
+.content_center ul  {
+    text-align: left;
+    margin: auto;
+}
+.content_center ul li  {
+    font-size: 120%;
+    list-style-type: square;
+}
+.content_right  {
+    float: left;
+    padding: 10px;
+}
+.content_right  {
+    width: 33%;
+}
+.content_right ul  {
+    text-align: left;
+    margin: auto;
+}
+.content_right ul li  {
+    font-size: 120%;
+    list-style-type: square;
+}
+.content_validator  {
+    text-align: center;
+    font-family: 'righteous';
+    width: 100%;
+    font-size: 100%;
+    overflow: hidden;
+}
+.content_validator h2  {
+    text-decoration: underline;
+}
+img  {
+    border: 1px solid black;
+}

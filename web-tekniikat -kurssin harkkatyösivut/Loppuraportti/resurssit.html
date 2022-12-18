@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fi-fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Janne Arkon web-sivu ja portfolio">
+  <meta name="author" content="Janne Arkko">
+  <meta name="keywords" content="Janne Arkko">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+<link rel="stylesheet" href="styles/styles_resurssit.css">
+
+<title>Resurssit/Harjoitustyö</title>
+
+</head>
+
+<body>
+<!-- page alkaa -->
+<div class="page">
+<!-- header alkaa -->
+    <div class="header">
+        <b>JANNE ARKKO, HARJOITUSTYÖ</b><br>
+        Valintaopintojakso 2021
+    </div>
+<!-- navbar -->
+    <div class="nav">
+        <ul>
+            <li><a href="synopsis.html">Synopsis</a></li>
+            <li><a href="rakennekaavio.html">Rakennekaavio</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="testaus.html">Testaus</a></li>
+            <li class="currentLink"><a href="resurssit.html">Resurssit</a></li>
+            <li><a href="itsearvio.html">Itsearvio ja kommentit</a></li>
+            <li><a href="https://student.labranet.jamk.fi/~AB3817/web_tekniikat/Harjoitustyo/" target="_blank">Linkki sivustoon!</a></li>
+        </ul>
+    </div>
+<!-- content -->
+    <div class="content">
+        <h1>Resurssit ja suunnittelu</h1>
+            <h2>Yleissuunnittelu</h2>
+                <ul>
+                    <li>Julkaistava sivu on toinen versio alkuperäisestä sivustosta.</li>
+                    <li>Vanhan sivuston kohdalla lähdin suunnittelemaan yksisivuista alaspäin scrollattavaa sivua, jossa eri osa-alueet tulevat kronologisesti
+                        alekkain. Mutta en ollut täysin tyytyväinen sivuston ilmeeseen ja kun aikaa oli reilusti niin päätin tehdä toisen sivuston samalle värimaailmalle
+                        ja samoilla sisällöillä, mutta eri näköisenä. Edellisen version oikoluin ja tarkastutin kriittisesti usella ystävällä ja sivustosta tuli oikein hyvä
+                        ja ihan yhtä lailla olisin voinut julkaista sen harjoitustyönäni, mutta esimerkiksi yksisivuisen websivun aktiivisen linkin esiintuominen, kun käytössä on 
+                        bookmarkit, on hyvin vaikeaa
+                        enkä siinä onnistunut, joten mm. se olisi jäänyt pois lopullisesta työstä. </li>
+                    <li>Lähdin rakentamaan uutta sivua ajatuksena, että jokainen osa-alue on oma sivunsa, jolloin saan hyvin helposti esimerkiksi aktiivisena olevan
+                        linkin muotoiltua niin, että käyttäjä näkee millä sivulla on.</li>
+                    <li>Ehkä ajallisesti suurin työ suunnittelussa oli suunnitella etusivuun, overlay menuun ja timelineen liittyvät muotoilut, jotta miellyttävät omaa silmää
+                        ja ovat toimivia kokonaisuuksia.
+                    </li>
+                    <li>Ajallisesti sivuston yleissuunnitteluun meni noin 25% työajasta.</li>
+                </ul>
+            <h2>Layout</h2>
+                <ul>
+                    <li>Layoutin osalta lähdin suunnittelemaan niin, että sivusto ensinnäkin skaalautuu hyvin eri näyttökoille ja, että suunnitteluala on turvallisesti noin
+                        70-80% näyttöpäätteestä sisällöille. Menuun ja Contact-osion linkkeihin päädyin overlay ja modal ratkaisuihin, koska varsinkin contact- osiossa 
+                        oli hyvin haasteellista saada järkevästi suunniteltua kaksi osa-aluetta eli sosiaalinen media ja varsinaiset yhteystiedot mahtumaan sopusuhtaisesti
+                        yhdelle sivulle. Modalin käyttäminen mahdollisti sen, ettei niiden tarvinnutkaan ja jolloin sain molemmille osille riittävän tilan ja 
+                        tulihan siitä ihan hyvän näköinen!
+                    </li>
+                    <li>Timelinen osalta käytin alunperin w3s valmista timeline pohjaa, mutta ajattelin, että se on liian obvious valinta, joten rakensin samoin
+                        periaattein, hieman youtubea hyväksikäyttäen, omannäköiseni timelinen joka on myös ehkä yksinkertaisempi kuin alkuperäinen.
+                    </li>
+                    <li>Gallerian osalta päädyin yhdessä viikkoharjoituksessakin esiin tulleeseen valmiiseen lightboxiin ja toinen slideshow rakentui internetistä 
+                        bongattujen ohjeiden perusteella. Sain molemmat toimimaan samanaikaisesti kun vaihtelin hieman scriptien luokkia uusiin, jotta ei tule sekaannuksia.
+                    </li>
+                    <li>Ajallisesti sivuston layoutin suunnitteluun ja rakentamiseen kului noin 30% työajasta.</li>
+                </ul>
+            <h2>Sisällön syöttäminen</h2>
+                <ul>
+                    <li>Sisällön syöttämisessä ei suuremmin ilmennyt ongelmia.</li>
+                    <li>Tiesin kutakuinkin heti alusta asti mitä haluan ja millä tavalla esitettynä, joten käytännössä se oli vain layoutin rakentamisesta kiinni.</li>
+                    <li>Ehkä suurimmat haasteet tulivat järkevän about me -tekstin jäsentelyssä ja iframe sekä kuvien asettelussa ja lisäämisessä.</li>
+                    <li>Alunperin suunnitelma oli pitää videot omassa tiedostossa palvelimella, mutta se täyttikin oman kiintiön täyteen ja jouduin
+                        lataamaan videot Youtubeen ja sieltä upottamaan ne sivustolle. Ja koska sitä ei aiemmin ollut tehnyt niin siinä joutui hieman raapimaan päätä
+                        , että miten sen saa toimimaan oikein.</li>
+                    <li>Ajallisesti sivuston sisältöjen syöttämisessä kului noin 15% työajasta.</li>
+                </ul>
+            <h2>Testaaminen/korjaaminen</h2>
+                <ul>
+                    <li>Lähdin suunnittelua aloittaessa liikkeelle siitä, että validoin sivuja aina kaikkien suurempien etappien jälkeen, jotta 
+                        virheet löytyy heti ja, jotta niihin ei tarvitse palata enää myöhemmin.</li>
+                    <li>Se oli hyvä taktiikka ja näin ollen kun totesin, että sivusto on valmis ja ajoin kaikki sivut validaattorin läpi niin en saanut
+                        yhtäkään virhettä tai edes varoitusta, joten olen tästä itse hyvin ylpeä.</li>
+                    <li>Suurimmalta osin varoitukset liittyivät vääräntyyppisiin tageihin elementtien sisällä tai vääriin tageihin esim. videota upottaessa sivustolle</li>
+                    <li>Työajallisesti virheiden korjaamiseen meni yllättävänkin paljon aikaa kun huomioi, että sitä teki tavallaan jatkuvasti, jotta sivusto pysyy validina
+                        , mutta se palkitsi loppua kohden.
+                    </li>
+                    <li>Sivustosta on hankittu käyttäjäkokemuksia usealta eri henkilöltä, sekä sisällöllisistä, että ulkonäöllisistä seikoista ja parannettu sitä palautteen mukaan.</li>
+                    <li>Ajallisesti sivuston testaamiseen ja virheiden korjaamiseen kului noin 20% työajasta.</li>
+                </ul>
+            <h2>Dokumentaatio</h2>
+                <ul>
+                    <li>Dokumentointi oli lopussa hyvä väline tutustuttaa itsensä vielä kerran juurta jaksaen omaan websivuun. Kun sivustoa välillä
+                        yön pikkutunneille asti rakenteli niin monesti saattoi unohtua se miten sivusto onkaan rakennettu.</li>
+                    <li>Otin itse sellaisen polun dokumentoinnin osalta, että teen ensin sivut valmiiksi ja sitten dokumentoin sen, jolloin vielä sain syvällisesti
+                        käytyä oman tuotoksen läpi ja tarkastettua esimerkiksi marginaalit ja asettelun.</li>
+                    <li>HTML ja CSS -tiedostojen kommentointi oli hieman arpapeliä, että mitä kaikkea sieltä täytyykään kommentoida ja otinkin siihen
+                        sellaisen tavan, että kommentoin ne niin hyvin, että oikeastaan kuka tahansa pystyy löytämään sieltä minkä tahansa elementin tai sen muotoiluun
+                        liittyvät asiat.
+                    </li>
+                    <li>Tietysti harjoitus 3:ssa julkaisin ensimmäisen websivuston karkean layoutin kuten pitikin, mutta pidin tämän harjoitustyön Layoutin
+                        tietoisesti hieman salassa.</li>
+                    <li>Synopsiksen osalta varsinkin 'Kenelle sivu tehdään?' oli mielestäni silmiä avaavaa pohdintaa, että ihan oikeasti kenelle sen teen??
+                        Minkälaisessa työympäristössä haluaisinkaan itse tehdä tätä työtä? ja minkälaisena haluaisin nähdä tulevaisuuden työnantajani? Olen itse milleniaali
+                        ja oma työotteeni on aina ollut, että kun tehdään työtä niin se tehdään niin hyvin kuin osataan ja palaute on tervetullutta, oli se positiivistä
+                        tai negatiivistä.</li>
+                    <li>Olen iloinen siitä, että ystäväpiiriini kuuluu tästä aiheesta jotain tietäviä, joten sain tuplatarkastettua ja oikoluettua/testattua sivujani
+                        jokaisen suuremman etapin jälkeen ja näin sain heti ulkopuolisen kommentit siitä mikä on hyvää ja missä voisi parantaa. Muunmuassa värimaailma
+                        on hienosäädetty käyttäjäkokemusten pohjalta sellaiseksi kuin se nyt on.
+                    </li>
+                    <li>Ajallisesti sivuston dokumentointiin kului noin 10% työajasta.</li>
+                </ul>
+    </div>
+
+</div>
+</body>
+</html>

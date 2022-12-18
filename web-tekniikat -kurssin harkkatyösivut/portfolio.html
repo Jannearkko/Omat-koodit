@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Janne Arkko official webpage and portfolio. A firefighter learning to code.">
+  <meta name="author" content="Janne Arkko">
+  <meta name="keywords" content="Janne Arkko">
+
+<!-- css stylesheets -->
+<link rel="stylesheet" href="styles/styles_overlay.css"> <!-- css for overlay menu-->
+<link rel="stylesheet" href="styles/styles_portfolio.css"><!-- css to the actual page -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="fonts/webfontkit-20210510-132214/stylesheet.css">
+<!-- fonts and icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<!-- lightbox -->
+<link href="lightbox/src/css/lightbox.css" rel="stylesheet">
+
+<title>Janne Arkko/Portfolio</title>
+
+</head>
+
+<body>
+<main>
+<!-- overlay menu-->
+    <nav class="fullpageMenu" id="nav">
+        <div class="banner">
+            <img src="images/janne1.jpg" alt="Janne Arkko">
+        </div>
+    <!-- overlayn links -->
+        <div class="nav">
+            <ul>
+                <li><a href="about.html" data-text="About">About</a></li>
+                <li><a href="portfolio.html" data-text="Portfolio"><span class="currentLink">Portfolio</span></a></li>
+                <li><a href="contact.html" data-text="Contact">Contact</a></li>
+                <li><a href="index.html" data-text="Return to Frontpage" style="font-size: 150%;">Return to Frontpage</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- hamburger menu icon and span to toggle overlay menu-->
+    <span class="menuiconport" id="toggle" onclick="menuToggle()"><i class="fa fa-bars fa-2x" style="color: rgb(248, 74, 74);"></i></span>
+<!-- JS fr overlay menu -->
+        <script>
+            function menuToggle()  {
+                var nav = document.getElementById('nav');
+                var toggle = document.getElementById('toggle');
+                nav.classList.toggle("active")
+                toggle.classList.toggle("active")
+            }
+        </script>
+    <section class="page"> <!-- styling for page, entire page begins -->
+        <header>
+            <h1 class="portfolio">Portfolio</h1> <!-- headline -->
+        </header>
+
+        <h3>Education and work history</h3>
+        <!--timeline begins-->
+            <article class="timeline">
+                <ul>
+                    <li>
+                        <div class="content_timeline"> 
+                            <h4>Upper Secondary Level</h4>
+                            <p>Finnish Matriculation Examination</p>
+                            <p>Vocational Qualification in Construction</p>
+                        </div>
+                        <div class="aika">
+                            <h5>2010</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content_timeline">
+                            <h4>Military</h4>
+                            <p>Finnish Military Service</p>
+                            <p>Military rank: Sergeant</p>
+                        </div>
+                        <div class="aika">
+                            <h5>2011</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content_timeline">
+                            <h4>UN Peacekeeper</h4>
+                            <p>UNIFIL III/Lebanon</p>
+                        </div>
+                        <div class="aika">
+                            <h5>2012</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content_timeline">
+                            <h4>Firefighter Degree</h4>
+                            <p>Emergency Services Academy Finland</p>
+                        </div>
+                        <div class="aika">
+                            <h5>2014</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content_timeline">
+                            <h4>Firefighter/Paramedic</h4>
+                            <p>Länsi-Uusimaa Department of Rescue Services</p>
+                        </div>
+                        <div class="aika">
+                            <h5>2015</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content_timeline">
+                            <h4>Firefighter/Paramedic</h4>
+                            <p>Keski-Suomi Department of Rescue Services</p>
+                            <p style="text-decoration: underline;">Current Employer</p>
+                        </div>
+                        <div class="aika">
+                            <h5>2020</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content_timeline">
+                            <h4>JAMK</h4>
+                            <p>Began studies</p>
+                            <p>Bachelor's Degree in ICT</p>
+                        </div>
+                        <div class="aika">
+                            <h5>2021</h5>
+                        </div>
+                    </li>
+                </ul>
+                <div style="clear:both;"></div>
+                <!-- clear command to timeline -->
+            </article>
+            <!--timeline ends-->
+            <!-- gallery starts-->
+            <article class="galleria">
+                <h2 class="mywork">My Work</h2> <!-- headline -->
+                
+                <!-- Highline 2021 -->
+                <h3>Highline 2021 exercise, Spring 2021</h3>
+                <br>
+                    <!-- slideshow for images and videos-->
+                    <aside class="slideshow-lohko">
+                        <div class="kuvat haivytys">
+                        <img src="images/surffaaja.jpg" alt="Surfing with the Resca -board" style="width:100%">
+                        <div class="text">Surfing with the Resca -board</div>
+                        </div>
+    
+                        <div class="kuvat haivytys">
+                            <iframe width="1000" height="600"
+                                src="https://www.youtube.com/embed/4Rh24oploHc?mute=1">
+                            </iframe>
+                            <div class="text">Trying to surf in the rapids</div>
+                        </div>
+                    
+                        <div class="kuvat haivytys">
+                        <img src="images/jannejajoel.jpg" alt="Surface rescuers" style="width:100%">
+                        <div class="text">Two surface rescuers training</div>
+                        </div>
+                    
+                        <div class="kuvat haivytys">
+                        <img src="images/highline.jpg" alt="Building the Highline" style="width:100%">
+                        <div class="text">Building the ''Highline'' using flying W</div>
+                        </div>
+    
+                        <div class="kuvat haivytys">
+                            <img src="images/thehighline.jpg" alt="The Highline" style="width:100%">
+                            <div class="text">The Highline</div>
+                        </div>
+    
+                        <div class="kuvat haivytys">
+                            <iframe width="1000" height="600"
+                                src="https://www.youtube.com/embed/Z8IjybVJNzw?mute=1">
+                            </iframe>
+                            <div class="text">Plop to the rapids (Spring 2021, don't mind the timestamp)</div>
+                        </div>
+                                    
+                        <div class="kuvat haivytys">
+                            <iframe width="1000" height="600"
+                                src="https://www.youtube.com/embed/agmKOlEnEbo?mute=1">
+                            </iframe>
+                            <div class="text">The plop from different angle</div>
+                        </div>
+                    
+                    
+                        <div class="kuvat haivytys">
+                            <iframe width="1000" height="600"
+                                src="https://www.youtube.com/embed/Ys86rav84sg?mute=1">
+                            </iframe>
+                            <div class="text">Lunch time! (Spring 2021, don't mind the timestamp)</div>
+                        </div>
+                    <!-- prev. next. arrow function -->
+                        <a class="edellinen" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="seuraava" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </aside>
+    
+                        <br>
+                    <!-- dots to tell what images (1/7) -->
+                    <div style="text-align:center">
+                        <span class="piste" onclick="currentSlide(1)"></span> 
+                        <span class="piste" onclick="currentSlide(2)"></span> 
+                        <span class="piste" onclick="currentSlide(3)"></span>
+                        <span class="piste" onclick="currentSlide(4)"></span>
+                        <span class="piste" onclick="currentSlide(5)"></span>
+                        <span class="piste" onclick="currentSlide(6)"></span>
+                        <span class="piste" onclick="currentSlide(7)"></span>
+                        <span class="piste" onclick="currentSlide(8)"></span>
+                    </div>
+                        <br>
+    
+                    <!-- JS for slideshow -->
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                    
+                        function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                        }
+                    
+                        function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                        }
+                    
+                        function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("kuvat");
+                        var dots = document.getElementsByClassName("piste");
+                        if (n > slides.length) {slideIndex = 1}    
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" aktiivinen", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " aktiivinen";
+                        }
+                    </script>
+            </article>
+            <!--gallery ends-->
+            <!-- lightbox gallery for CoS2021 begins-->
+            <article class="gallerytab">
+                <h2 class="mywork">JAMK University of Applied Science</h2> <!-- headline-->
+				    <h3>Course of Selection 2021</h3>
+
+				    <!-- Gallery with 4 columns -->
+					<aside class="rivi">
+						<div class="pylvas">
+					  		<a href="images/harjoitus1.jpg" data-lightbox="Course of Selection 2021" data-title="We started with the very basics of html"><img src="images/harjoitus1.jpg"
+								alt ="We started with the very basics of html"></a>
+						  	<p>Exercise 1</p>
+
+					  		<a href="images/harjoitus2.jpg" data-lightbox="Course of Selection 2021" data-title="At exercise 2 we did some styling and commenting"><img src="images/harjoitus2.jpg"
+								alt="At exercise 2 we did some styling and commenting"></a>
+						  	<p>Exercise 2</p>
+
+						</div>
+
+						<div class="pylvas">
+							<a href="images/harjoitus3.jpg" data-lightbox="Course of Selection 2021" data-title="In exercise 3 we used the external stylesheet and validation"><img src="images/harjoitus3.jpg"
+								alt="In exercise 3 we used the external stylesheet and validation"></a>
+						  	<p>Exercise 3</p>
+
+							<a href="images/harjoitus4.jpg" data-lightbox="Course of Selection 2021" data-title="At exercise 4 we learned what is the box-model"><img src="images/harjoitus4.jpg"
+								alt="At exercise 4 we learned what is the box-model"></a>
+						  	<p>Exercise 4</p>
+
+						</div>
+
+						<div class="pylvas">
+
+							<a href="images/harjoitus5.jpg" data-lightbox="Course of Selection 2021" data-title="At exercise 5 we used the box-model and styled the page even further"><img src="images/harjoitus5.jpg"
+								alt ="At exercise 5 we used the box-model and styled a page even further"></a>
+						  	<p>Exercise 5</p>
+
+							<a href="images/harjoitus6.jpg" data-lightbox="Course of Selection 2021" data-title="At exercise 6 we applied external fonts from Google and icons to the text using Font Awesome -icons"><img src="images/harjoitus6.jpg"
+								alt ="At exercise 6 we applied external fonts from Google and icons to the text using Font Awesome -icons"></a>
+						  	<p>Exercise 6</p>
+
+						</div>
+
+						<div class="pylvas">
+
+							<a href="images/harjoitus7.jpg" data-lightbox="Course of Selection 2021" data-title="At exercise 7 we added a video player and a video to autoplay in background as well as an audio track"><img src="images/harjoitus7.jpg"
+								alt ="At exercise 7 we added a video player and a video to autoplay in background as well as an audio track"></a>
+						  	<p>Exercise 7</p>
+
+							<a href="images/tyossa_smaller.jpg" data-lightbox="Course of Selection 2021" data-title="The Final test is to develop your own website using all the techniques we've learned in the past 8 weeks"><img src="images/tyossa_smaller.jpg"
+								alt="Developing my own site"></a>
+							 <p>The Man at work, at work.</p>
+
+						</div>
+                    </aside>
+				<div class="content"> <!-- text right below image in gallery-->
+
+				    <div id="imgtext"></div>
+				    </div>
+                        <br>
+                        <br>
+            </article>
+                        <br>
+                        <br>
+                        <br>
+				    <!-- lightbox gallery ends -->
+				    <!-- Lightbox for gallery -->
+				    <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+    <!-- page ends -->
+    </section>
+</main>
+</body>
+</html>
