@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H2T5 - Avaruuden olioita</title>
+    </head>
+
+    <body>
+        <div id="results"></div>
+
+        <script>
+        
+            function Person(name,age,phone,email) {
+                this.name = name;
+                this.age = age;
+                this.phone = phone;
+                this.email = email;
+
+                this.setAge = function(){
+                    this.age++;
+                }
+
+            }
+            let janne = new Person("Janne Arkko",31,"0405655290","janne.arkko@jee.fi");
+            let pelle = new Person("Pelle Hermanni",56,"050-1235123","pelle.hermanni@pelle.fi");
+            let tollo = new Person("Tollo Peloton",45,"0700-123123","tollo.peloton@keksintöjä.fi");
+            console.log(janne);
+            console.log(pelle);
+            console.log(tollo);
+
+            janne.setAge(1);
+            console.log("Jannen uusi ikä on:", janne.age);
+            janne.setAge(1);
+            console.log("Jannen uusi ikä on:", janne.age);
+            console.log(janne);
+
+            pelle.setAge(1);
+            console.log("Pellen uusi ikä on:", pelle.age);
+            pelle.setAge(1);
+            console.log("Pellen uusi ikä on:", pelle.age);
+            console.log(pelle);
+
+            tollo.setAge(1);
+            console.log("Tollon uusi ikä on:", tollo.age);
+            tollo.setAge(1);
+            console.log("Tollon uusi ikä on:", tollo.age);
+            console.log(tollo);
+
+
+        </script>
+    </body>
+</html>

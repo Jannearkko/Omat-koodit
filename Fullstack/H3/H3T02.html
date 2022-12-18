@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tulosta tasoitukset</title>
+
+        <script>
+            function kutsu(){
+                
+                var hcpdata = [{ "name": "Ari", "hcp": 54 },
+                            { "name": "Pasi", "hcp": 5 },
+                            { "name": "Seppo", "hcp": 20 }];
+
+                // haetaan ja tallennetaan objektien arvot muuttujiin
+                let hcparvo = Object.values(Object.values(hcpdata)[0]);
+                let hcparvo2 = Object.values(Object.values(hcpdata)[1]);
+                let hcparvo3 = Object.values(Object.values(hcpdata)[2]);
+
+                // yhdistetään muuttujat 
+                let hcparvot = [hcparvo[0]+" "+hcparvo[1],hcparvo2[0]+" "+hcparvo2[1],hcparvo3[0]+" "+hcparvo3[1]];
+
+                // poistetaan vanhat tulosteet ensin, jos on.
+                let vanhatpois = document.getElementById("hcplist");
+                while(vanhatpois.hasChildNodes()){
+                    vanhatpois.removeChild(vanhatpois.firstChild);
+                }
+                // loopataan li-elementit sivulle ja niihin sisältö hcparvot muuttujasta
+                for (i=0; i < hcpdata.length;i++){
+                    let ulnode = document.getElementById("hcplist");
+                    let linode = document.createElement("li");
+                    let litext = document.createTextNode(hcparvot[i]);
+                    linode.appendChild(litext);
+                    ulnode.appendChild(linode);
+                };
+            }
+        </script>
+
+    </head>
+    <body>
+        <button type="button" onclick="kutsu()">Tulosta tasoitukset</button>
+
+        <ul id="hcplist"></ul>
+
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H#T04 - SUMTHINGTODO</title>
+    <style>
+        #todo {
+            margin-bottom:15px;
+        }
+        h1 {
+            margin-bottom:30px;
+        }
+        main {
+            width:200px;
+        }
+        li {
+            font-size: large;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>SimpleToDo</h1>
+
+        <input type="text" id="todo" placeholder="ToDo..."><br>
+
+        <button type="button" id="lisaa">Lisää</button>
+        <button type="button" id="tyhjaa">Tyhjää lista</button>
+
+        <ul id="lista"></ul>
+    </main>
+    <script>
+        // funktio lisäämään alkio listaan
+        function kutsu(){    
+            let ulnode = document.getElementById("lista");
+            let linode = document.createElement("li");
+            let litext = document.createTextNode(todo.value);
+            linode.className ="item"
+            linode.appendChild(litext);
+            ulnode.appendChild(linode);
+        }
+        // funktio poistamaan tyhjäämään lista
+        function poista(){
+            let vanhatpois = document.getElementById("lista");
+            while(vanhatpois.hasChildNodes()){
+                vanhatpois.removeChild(vanhatpois.firstChild);
+            }
+        }
+
+        // nappien kuuntelijat
+        lisaa.addEventListener("click",kutsu);
+        tyhjaa.addEventListener("click",poista);
+
+        // eventlistener funktio alkioiden poistamiseksi listalta.
+        document.getElementById("lista").addEventListener("click",function(alkio) {
+        if (alkio.target && alkio.target.matches("li.item")) {
+            alkio.target.parentElement.removeChild(alkio.target);
+        }
+        });
+    </script>
+</body>
+</html>

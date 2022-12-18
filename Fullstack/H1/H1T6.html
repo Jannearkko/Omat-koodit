@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H1T6 - Taulukoita, oi taulukoita</title>
+    </head>
+
+    <body>
+        <main>
+            <div style="width:20%;border: 1px dotted black;">
+                <h2 style="text-decoration: solid;">JavaScript-taulukon läpikäynti</h2>
+
+                <p>for- ja for...of-silmukoilla</p>
+                <hr>
+                <p id="tulokset"></p>
+            </div>
+        </main>
+        <script>
+
+
+
+            let taulukko = [11, 22, 33, 44];
+            let summa = 0;
+            let lukumaara = 0;
+            let keskiarvo = 0;
+            let tulosrivit = '';
+
+            for (let arvo of taulukko) {
+                lukumaara++;
+                summa = summa + arvo;
+            }
+
+            keskiarvo = (summa/lukumaara).toFixed(1);
+            
+            for (let i = 0; i < taulukko.length; i++) {
+                tulosrivit += ("taulukko[" + i + "] = " + taulukko[i] + "<br>");
+            }
+
+            document.getElementById("tulokset").innerHTML = "Taulukon alkiot ovat:" +"<br><br>"+ tulosrivit + "<br>"
+             + "Taulukon alkioiden"+"<br><br>"+"lukumäärä: "+ lukumaara +"<br>"+ "summa: " + summa + "<br>"+ "keskiarvo: "+ keskiarvo;
+            console.log(lukumaara);
+            console.log(summa);
+            console.log(tulosrivit);
+            console.log(keskiarvo);
+
+
+
+        </script>
+    </body>
+</html>

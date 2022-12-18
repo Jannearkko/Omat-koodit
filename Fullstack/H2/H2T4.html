@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H2T4 - Gagattaako?</title>
+    </head>
+
+    <body>
+        <h3>OMG - Lady Gaga start singing!</h3>
+        <div id="results"></div>
+        <div id="results2"></div>
+        <script>
+            let lines = ''
+            let vika_laini = (a)=>{
+                document.getElementById("results2").innerHTML = "WOW - It was the best concert in my life..."
+            }
+            let fireworks_omg = (a)=>{
+                for (let i = 0; i <= 4; i++) {
+                    setTimeout( () =>{
+                        document.getElementById("results").innerHTML = lines;
+                        lines +="NICE - fireworks!<br><br>";
+                        }, i * 5000);
+                    }
+            }
+            fireworks_omg();
+            setInterval(vika_laini,24000);
+        </script>
+    </body>
+</html>

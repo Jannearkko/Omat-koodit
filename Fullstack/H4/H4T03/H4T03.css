@@ -1,0 +1,54 @@
+main {
+    width:300px;
+    border: 1px solid black;
+    background-color: black;
+    /* background-image: linear-gradient(to right, blue, white); */
+    font-family: "Archivo Black", sans-serif;
+}
+
+.container ul{
+    list-style: none;
+    padding-left:15px;
+    width: 270px;
+    color: white;
+    background-image: linear-gradient(45deg,#f3ec78, #e9698d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.container li {
+    font-size: 20px;
+
+}
+.highlight {
+    background-image: linear-gradient(45deg,#f3ec78, #e9698d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    border:1px solid rgb(255, 125, 39);
+    font-weight: bold;
+}
+.container h2 {
+    padding-left: 10px;
+    opacity: 1;
+    background-image: linear-gradient(45deg,#f3ec78, #e9698d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+}
+.container input {
+    opacity: 1;
+    margin-left: 10px;
+    width: 265px;
+    border-radius: 10px;
+    padding-left:10px;
+    
+}
+

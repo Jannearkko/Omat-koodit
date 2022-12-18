@@ -1,0 +1,24 @@
+{
+    "name": "harkkaprojekti",
+    "version": "1.0.0",
+    "description": "Fullstack -opintojakson harjoitustyö",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Janne Arkko",
+    "license": "ISC",
+    "dependencies": {
+      "chart.js": "^3.9.1",
+      "dateformat": "^5.0.3",
+      "express": "^4.18.2",
+      "influx": "^5.9.3",
+      "request": "^2.88.2"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.20"
+    }
+  }
+  

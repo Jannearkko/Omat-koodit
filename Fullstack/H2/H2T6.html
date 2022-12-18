@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2T6 - Laskin</title>
+</head>
+<body>
+    <main>
+        <div id="vauhtilaskin" style="border: 1px solid black; width: 20%;background-color: aqua;">
+            <h2 style="text-align: center;">Vauhtilaskin</h2>
+            <form id="f">
+                <div id="laskuri" style="text-align: left; width: 100%; ">
+                    <label style="margin-left: 10px; margin-bottom: 5px;">Tunnit:</label>
+
+                    <input id="tunnit" placeholder="" style="margin-left:35px; width:20.3%" value ="1" type="number"><br>
+
+                    <label style="margin-left: 10px; margin-bottom: 5px;width:15%" type="number">Minuutit:</label>
+
+                    <input id="minuutit" placeholder="35" style="margin-left:22px;width:20%" value ="43" type="number"><br>
+
+                    <label style="margin-left: 10px; margin-bottom: 5px;">Sekunnit:</label>
+
+                    <input id="sekunnit" placeholder="54" style="margin-left:21px;width:20%" value ="54" type="number"><br>
+
+                    <label style="margin-left: 10px; margin-bottom: 5px;">Kilometrit:</label>
+
+                    <input id="kilometrit" placeholder="20" style="margin-left:11px;width:20%" value ="20"type="number"><br>
+                    
+                </div>
+                <button type="button" onclick="kutsu()" style="margin-left: 80px; margin-top:20px;">Laske vauhdit</button>
+                <div style="width: 50%; margin-left:60px;text-align:center;">
+                    <p id="results"></p>
+                    <p id="results2"></p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script>
+        class Vauhtilaskin {
+            constructor(tunnit,minuutit, sekunnit,kilometrit) {
+                this.tunnit = tunnit;
+                this.minuutit = minuutit;
+                this.sekunnit = sekunnit;
+                this.kilometrit = kilometrit;
+            }
+            // Getter 1
+            get kmhpace(){
+                return this.calcKmhPace();
+            }
+            // Getter 2
+            get minkmpace(){
+                return this.calcMinkmPace();
+            }
+            // Metodi 1
+            calcKmhPace() {
+                let mintun = this.minuutit / 60;
+                let sektun = (this.sekunnit /60)/60;
+                let kokopaskatunneissa = this.tunnit + mintun + sektun;
+                let arvo = this.kilometrit/kokopaskatunneissa;
+                return arvo.toFixed(2);
+            }
+            // Metodi 2
+            calcMinkmPace(){
+                let sekunnit = parseInt(this.tunnit)*60*60+parseInt(this.minuutit)*60+parseInt(this.sekunnit);
+                let sekunnitPerKm = sekunnit/this.kilometrit;
+                let minuutit = 0;
+                while (sekunnitPerKm >= 60){
+                    minuutit++;
+                    sekunnitPerKm = sekunnitPerKm -60;
+                }
+                return minuutit.toFixed(0)+":"+sekunnitPerKm.toFixed(0);
+            }
+        }
+        function kutsu(){
+            let trippi = new Vauhtilaskin(Number(f.tunnit.value),Number(f.minuutit.value),Number(f.sekunnit.value),Number(f.kilometrit.value));
+            document.getElementById("results").innerHTML = trippi.kmhpace + " km/h";
+            document.getElementById("results2").innerHTML = trippi.minkmpace + "/km";
+        } 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H1T5 - Parillinen vai ei?</title>
+    </head>
+
+    <body>
+
+        <script>
+            const taulukko = [1,2,3,4,5,6,7,8,9]
+            let parit = []
+
+            function tarkastus(a) {
+                for (let i=0; i < a.length; i++) {
+                    let parillinen = a[i]
+                    if (parillinen % 2 == 0) {
+                        parit.push(parillinen)
+                    }
+                }
+            }
+            function tulostus() {
+                tarkastus(taulukko);
+                console.log("Tarkastettava taulukko: " + taulukko);
+                console.log("Parilliset: " + parit)
+            }
+            tulostus()
+        </script>
+    </body>
+</html>

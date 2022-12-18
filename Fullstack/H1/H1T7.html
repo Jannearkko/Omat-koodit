@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H1T7 - Karkaako vuosi?</title>
+    </head>
+
+    <body>
+        <form>
+            <label type="text">Karkausvuosiko?</label>
+            <br><br>
+            <input type="int" placeholder="Anna vuosiluku" id="vuosiluku" name="vuosiluku">
+            <button type="button" onclick="syöttöalue()">Tarkista!</button>
+        </form>
+        <p id="tulokset"></p>
+        <script>
+
+            function syöttöalue() {
+                let syöttö = document.getElementById("vuosiluku").value;
+                document.getElementById("tulokset").innerHTML = karkausvuosi(syöttö);
+            }
+
+            function karkausvuosi(vuosi) {
+                if (vuosi % 4 == 0 && vuosi % 100 != 0) {
+                    return true;
+                } else if (vuosi % 100 == 0 && vuosi % 400 != 0) {
+                    return false;
+                } else if (vuosi % 400 == 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
