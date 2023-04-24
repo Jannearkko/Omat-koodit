@@ -1,0 +1,11 @@
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\bin\Debug\Very Basic Platform Game.exe.config
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\bin\Debug\Very Basic Platform Game.exe
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\bin\Debug\Very Basic Platform Game.pdb
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\obj\Debug\Very Basic Platform Game.csproj.AssemblyReference.cache
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\obj\Debug\Very Basic Platform Game.csproj.SuggestedBindingRedirects.cache
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\obj\Debug\Very_Basic_Platform_Game.Form1.resources
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\obj\Debug\Very_Basic_Platform_Game.Properties.Resources.resources
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\obj\Debug\Very Basic Platform Game.csproj.GenerateResource.cache
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\obj\Debug\Very Basic Platform Game.csproj.CoreCompileInputs.cache
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\obj\Debug\Very Basic Platform Game.exe
+D:\Omat-koodit\kirjanpitosofta\Very Basic Platform Game\obj\Debug\Very Basic Platform Game.pdb
