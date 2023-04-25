@@ -1,0 +1,11 @@
+D:\Omat-koodit\Hangman Game\bin\Debug\Hangman Game.exe.config
+D:\Omat-koodit\Hangman Game\bin\Debug\Hangman Game.exe
+D:\Omat-koodit\Hangman Game\bin\Debug\Hangman Game.pdb
+D:\Omat-koodit\Hangman Game\obj\Debug\Hangman Game.csproj.AssemblyReference.cache
+D:\Omat-koodit\Hangman Game\obj\Debug\Hangman Game.csproj.SuggestedBindingRedirects.cache
+D:\Omat-koodit\Hangman Game\obj\Debug\Hangman_Game.Form1.resources
+D:\Omat-koodit\Hangman Game\obj\Debug\Hangman_Game.Properties.Resources.resources
+D:\Omat-koodit\Hangman Game\obj\Debug\Hangman Game.csproj.GenerateResource.cache
+D:\Omat-koodit\Hangman Game\obj\Debug\Hangman Game.csproj.CoreCompileInputs.cache
+D:\Omat-koodit\Hangman Game\obj\Debug\Hangman Game.exe
+D:\Omat-koodit\Hangman Game\obj\Debug\Hangman Game.pdb
