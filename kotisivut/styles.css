@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas;
+    background-color: #000;
+    color: #fff;
+}
+
+.tab-bar {
+    background-color: #444;
+    display: flex;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.image {
+    flex-basis: 40;
+}
+.tab-button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    /*padding: 5px 15px; /* Reduce the horizontal padding to make the bar narrower */
+    margin-left: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.tab-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background-color: #000;
+    border-radius: 5px 5px 0 0;
+}
+.tab-button.add-button {
+    /* Style the "+" button */
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.tab-button.add-button:hover {
+    /* Add hover effect for the "+" button */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.close-button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.powershell-container {
+    width: calc(100%-20px);
+    height:80%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 30px; /* Add some spacing between the tab bar and PowerShell window */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.powershell-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    height: 90%;
+    overflow: hidden;
+    scrollbar-width: auto;
+}
+
+.powershell-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Text container styles */
+.text-container {
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+    padding: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+.text-container p {
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 0px;
+    margin: 2px;
+}
+.console-output {
+    font-size: 12px;
+    margin: 2px;
+    white-space: pre;
+}
+.console-output2 {
+    font-size: 12px;
+    margin: 2px;
+    white-space: pre;
+}
+
+/* Command bar style */
+.command-bar {
+    width: 100%;
+    background-color: #000;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+
+}
+/* Common styles for the input field */
+.input-container {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 2px;
+  }
+  
+  .input-label {
+    margin-right: 3px;
+    color: #fff;
+  }
+  
+  .input-field {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: #ffe600;
+    font-size: inherit;
+    outline: none;
+  }
+  
+  /* Additional style for the text and input layout */
+  .text-and-input {
+    display: flex;
+    align-items: center;
+  }
+  

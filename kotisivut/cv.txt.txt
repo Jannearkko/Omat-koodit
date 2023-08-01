@@ -1,0 +1,71 @@
+`
+WHO
+
+    Janne Arkko
+    Firefighter, ICT-engineering student
+
+SUMMARY    
+    
+    Problems are made to be solved. As new technologies emerge and old ones are developed,
+    I strive with strong work ethic and motivation to stay firmly on the cutting edge.
+    The most rewarding thing, after family, is to learn something new.
+
+WORK EXPERIENCE (most notable)    
+
+    Central Finland Department of Emergency Services
+    2020->
+    Roles of firefighter and paramedic
+
+    Entrepreneur in construction business
+    2018 - 2020
+    Contractor in smaller construction projects and subcontractor
+    in medium and large-scale projects
+
+    Western Uusimaa Department of Emergency Services
+    2015 - 2020
+    Roles of firefighter and paramedic
+
+    Finnish Defence Forces
+    2012 - 2013
+    Peacekeeper in UNIFIL III -operation in Lebanon
+
+EDUCATION (most notable)
+
+    Jyväskylä University of Applied Science
+    Bachelor of Engineering, Information and Communications Technology
+    Programming, data-analytics and AI
+    Graduation est. 2025
+    GPA 4,41/5,00
+
+SKILLS
+
+    Soft skills
+        -Communication
+        -Teamplayer
+        -Problem-solving
+        -Solution-oriented
+        -Design Thinking
+    Hard skills
+        -Python, C#, JavaScript, Node.js
+        -HTML, CSS
+        -SQL, NoSQL
+        -Figma
+        
+PROJECTS
+
+    Zappacket clientele database design
+    2022
+    Designer of Zappacket clientele database, not including implementation
+
+    Weather-app with RuuviTag and Raspberry Pi
+    2023
+    As a hobby, I designed and implemented a weather-app running on PI.
+    It gathered data from RuuviTag -sensor, stored it into a database
+    and the data was fetched and processed with Node.js
+
+POI
+
+    -Coding
+    -Data Science
+    -Game development with UE5
+    -Hitting the gym`
