@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Album-app</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <h1 id="header">Album Fetcher 3.0</h1>
+  <div id="parent">
+
+    <div id="left-container">
+      <form action="/submit" method="post" id="form-container" onsubmit="return submitForm(this)">
+        <label for="artist">Artist:</label><br>
+        <input type="text" id="artist" name="artist"><br>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="year">Year:</label><br>
+        <input type="number" id="year" name="year"><br>
+        <label for="genre">Genre:</label><br>
+        <input type="text" id="genre" name="genre"><br>
+        <label for="tracks">Tracks:</label><br>
+        <input type="number" id="tracks" name="tracks"><br><br>
+        <input type="submit" value="Add new album"><br>
+      </form>
+      <div id="buttons-container">
+        <button id="fetchAlbums" style="margin-top: 5px;" onclick="fetchAlbums()">Fetch albums</button><br>
+        <input type="text" id="deleteAlbumId" placeholder="ID to delete">
+        <button id="deleteAlbum" style="margin-top: 5px;">Delete album</button>
+        <button id="updateAlbum" style="margin-top: 20px;margin-bottom: 10px;">Update album</button>
+      </div>
+      <div id="inputContainer"></div>
+    </div>
+    <div id="result-container"></div>
+  </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>

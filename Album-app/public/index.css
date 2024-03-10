@@ -1,0 +1,40 @@
+#parent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#left-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  max-width: 200px;
+}
+
+#form-container {
+  margin-bottom: 10px;
+}
+
+#buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+#result-container {
+  flex: 1;
+  padding: 10px;
+  max-width: 250px;
+  float:left;
+}
+#header {
+  text-align: center;
+}
+
+
+
