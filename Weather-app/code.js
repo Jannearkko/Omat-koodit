@@ -17,7 +17,7 @@ async function loadNow() { // fetch -funktio
     showNow(datas) // kutsutaan showNow
 }
 async function loadOut() { // fetch openweathermapista paikallinen sää
-    var API_KEY = "51f4603ab225e1e678ba28ff7a331e01"
+    var API_KEY = "writeyourown"
     var latitude = 62.376190;
     var longitude = 25.564570;
     var url = `http://api.openweathermap.org/data/2.5/weather?`+`lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
